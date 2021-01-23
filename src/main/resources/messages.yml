@@ -1,0 +1,7 @@
+prefix: "§8» §bLlamaVote §8| §7"
+
+already.voted: "§cYou have already voted today!"
+not.voted: "§cYou haven't voted yet!"
+player.vote: "§aHey! Thank you for voting :)\nYou've received §6500$ §aand §b6 Diamonds§a!"
+
+command.cooldown: "§cPlease wait §c[0] seconds before executing this command again!"

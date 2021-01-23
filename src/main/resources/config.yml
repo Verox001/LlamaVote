@@ -1,0 +1,20 @@
+CheckOnJoin: true
+
+# It's recommend to use a cooldown to prevent double vote rewards
+CommandCooldown: 5
+
+ApiKey: EMPTY
+# You can get an api key from https://minecraftpocket-servers.com/
+
+VoteRewards:
+  Money: 500
+  Commands:
+    - "say %p has voted for the Server!"
+    - "give \"%p\" diamond 6"
+
+Commands:
+  Vote:
+    Name: "vote"
+    Description: "Vote for the server"
+    Usage: "/vote"
+    Aliases: ["voting"]

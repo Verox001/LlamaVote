@@ -1,0 +1,5 @@
+name: LlamaVote
+version: 1.0.0
+author: Proxma
+main: net.lldv.llamavote.LlamaVote
+api: 1.0.0
