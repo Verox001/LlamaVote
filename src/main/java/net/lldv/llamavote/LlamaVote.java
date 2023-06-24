@@ -76,6 +76,10 @@ public class LlamaVote extends PluginBase {
     public void getVote(final String player, final Consumer<String> callback) {
         CompletableFuture.runAsync(() -> {
             try {
+                if(player.contains(" ")){
+                    player = player.replace(" ", "%20");
+                    callback.accept(player);
+                }
                 final CloseableHttpClient httpClient = HttpClients.createDefault();
                 final HttpGet request = new HttpGet(this.getURL + player);
 
@@ -95,6 +99,10 @@ public class LlamaVote extends PluginBase {
     public void setVoted(final String player) {
         CompletableFuture.runAsync(() -> {
             try {
+                if(player.contains(" ")){
+                    player = player.replace(" ", "%20");
+                    callback.accept(player);
+                }
                 final CloseableHttpClient httpClient = HttpClients.createDefault();
 
                 final HttpPost send = new HttpPost(this.setURL + player);
